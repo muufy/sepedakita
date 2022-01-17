@@ -1,0 +1,65 @@
+#body{
+    background-color: #7FBCBCB2;
+}
+/*START SIDEBAR*/
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #D1D1D1;
+    padding: 10px;
+}
+
+.sidebar-expanded {
+    width: 320px;
+}
+
+#sidebar-container .list-group a {
+    height: 50px;
+    color: black;
+    font-weight: bold;
+
+}
+
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+.sidebar-separator-title {
+    background-color: #D1D1D1;
+    height: 70px;
+}
+
+.sidebar-separator {
+    background-color: #D1D1D1;
+    height: 25px;
+}
+
+
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/*END SIDEBAR*/
+#option{
+    background-color: #D1D1D1;
+}
+
+.bg-abu{
+    background-color: #D1D1D1;
+}

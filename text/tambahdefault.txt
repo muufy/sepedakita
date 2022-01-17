@@ -1,0 +1,43 @@
+<?php
+include_once "config/config.php";
+		if (isset($_POST['addcart']))
+	{
+        $email = $_POST['email'];
+		$id_barang = $_POST['id_barang'];
+        $nama_barang = $_POST['nama_barang'];
+        $harga_barang = $_POST['harga_barang'];
+
+		$query = "insert into pesan (email,id_barang,nama_barang,harga_barang) values ('$email','$id_barang','$nama_barang','$harga_barang')";
+
+		$result= mysqli_query($GLOBALS['koneksi'],$query);
+		if ($result==1) {
+			header("Location: catalog.php");
+		}
+	}
+
+	if (isset($_POST['addorder']))
+	{
+        $email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$kota = $_POST['kota'];
+		$address = $_POST['address'];
+        $nama_barang = $_POST['nama_barang'];
+        $harga_barang = $_POST['harga_barang'];
+		$repeat = count ($email);
+
+
+		for($x=0; $x<$repeat; $x++){
+			
+			$query = "insert into ini_pesan (email,nama_barang,harga_barang,kota,address,phone) values ('$email[$x]','$nama_barang[$x]','$harga_barang[$x]','$kota[$x]','$address[$x]','$phone[$x]')";
+			$result= mysqli_query($GLOBALS['koneksi'],$query);
+			if ($result==1) {
+				$del="DELETE FROM pesan WHERE email='$email[$x]'";	
+				mysqli_query($GLOBALS['koneksi'],$del);
+				header("Location: cekorder.php");
+			}	
+		}
+		
+	}
+
+
+?>

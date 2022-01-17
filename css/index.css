@@ -1,0 +1,78 @@
+body {
+  background: #dbdbdb;
+}
+
+#header {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#header ul {
+  padding-top: 18px;
+}
+
+#banner {
+  padding-top: 25px;
+}
+
+#banner h3 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+#contacts {
+  background-color: darkgrey;
+  padding-bottom: 10px;
+}
+
+#contacts a {
+  padding: 10px;
+  color: black;
+}
+
+#container {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+#judul {
+  font-size: large;
+  font-weight: bold;
+}
+
+#logo {
+  padding: 10px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+#status {
+  font-weight: bold;
+}
+
+.grid-container {
+  display: inline-grid;
+}
+
+nav {
+  position: relative;
+}
+
+#bg-putih {
+  background-color: white;
+}
+
+#about {
+  padding-top: 50px;
+  font-family: Roboto;
+  text-align: center;
+}
